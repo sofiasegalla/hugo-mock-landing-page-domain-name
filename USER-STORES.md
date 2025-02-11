@@ -4,7 +4,7 @@ MisinformED is an online tool that allows users to educate themselves on the ris
 
 Note: MisinformED is not a real product
 
-## Features
+## Installed Features
 
 As a casual internet user, I want to learn about misinformation and its real-world consequences so that I can recognize and avoid spreading false information.
 As a social media user, I want a simple guide to verify news, images, and videos so that I can assess whether something is misleading before sharing it.
@@ -12,6 +12,9 @@ As an investigative journalist, I want to track misinformation trends in a topic
 As a concerned citizen, I want to discuss flagged misinformation with others so that I can better understand and counter false narratives in my community.
 As a student, I want access to research-backed explanations of misinformation so that I can understand how false beliefs take hold and why people fall for fake news.
 As someone unfamiliar with fact-checking, I want an intuitive and beginner-friendly platform so that I can confidently navigate misinformation without prior technical knowledge.
+
+## Other Features
+
 As a skeptical reader, I want to know that the information provided is unbiased and sourced from credible experts so that I can trust the platform’s guidance.
 As a researcher, I want real-time misinformation alerts so that I can track developing narratives and understand how false claims are spreading.
 As a teacher, I want access to misinformation lesson plans so that I can educate my students on critical thinking and media literacy.
