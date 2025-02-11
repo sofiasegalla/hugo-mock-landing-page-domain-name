@@ -1,87 +1,138 @@
-.home {
-    --bd-purple: #963234;
-    --bd-violet: #1e4a75;
-    --bd-accent: #122a43;
-    --bd-violet-rgb: 30, 74, 117;
-    --bd-accent-rgb: 150, 50, 52;
-    --bd-pink-rgb: 214,51,132;
-
-    .bd-masthead {
-        padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
-    }
-
-    .btn-bd-primary {
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet);
-        --bs-btn-border-color: var(--bd-violet);
-        --bs-btn-border-radius: .5rem;
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #963234;
-        --bs-btn-hover-border-color: #963234;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #963234;
-        --bs-btn-active-border-color: #963234;
-    }
+/* Color Variables */
+:root {
+    --bd-background: rgb(49, 48, 63); /* Dark Background */
+    --bd-card-bg: rgb(74, 72, 95); /* Dark Grey for Cards */
+    --bd-light: rgb(255, 255, 255); /* White Text */
+    --bd-accent-blue: rgb(78, 164, 199);
+    --bd-accent-orange: rgb(236, 153, 62);
+    --bd-accent-red: rgb(230, 67, 66);
 }
 
+.bd-masthead {
+    padding: 3rem 0;
+    background-color: rgb(49, 48, 63); /* Dark Background */
+    background-image: linear-gradient(180deg, rgba(49, 48, 63, 0.01), rgba(49, 48, 63, 1) 85%),
+                      radial-gradient(ellipse at top left, rgba(87, 185, 221, 0.5), transparent 50%), /* Light Blue Accent */
+                      radial-gradient(ellipse at top right, rgba(236, 153, 62, 0.5), transparent 50%), /* Orange Accent */
+                      radial-gradient(ellipse at center right, rgba(230, 67, 66, 0.5), transparent 50%), /* Red Accent */
+                      radial-gradient(ellipse at center left, rgba(87, 185, 221, 0.5), transparent 50%); /* Light Blue Accent */
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: rgb(49, 48, 63); /* Dark text */
+    --bs-btn-bg: rgb(236, 153, 62); /* Yellow/Orange Accent */
+    --bs-btn-border-color: rgb(236, 153, 62);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: rgb(49, 48, 63); /* Dark text on hover */
+    --bs-btn-hover-bg: rgb(230, 67, 66); /* Red Accent */
+    --bs-btn-hover-border-color: rgb(230, 67, 66);
+    --bs-btn-focus-shadow-rgb: rgb(236, 153, 62);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: rgb(230, 67, 66);
+    --bs-btn-active-border-color: rgb(230, 67, 66);
+}
+
+
+
+/* Body & Global Styling */
+body {
+    background-color: var(--bd-background) !important;
+    color: white !important;
+}
+
+/* Navbar */
 .navbar {
-    @extend .navbar-dark;
-
-    --bd-violet-rgb: 30, 74, 117; 
+    background-color: var(--bd-accent-blue); /* Keep existing background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     
-    padding: .75rem 0;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(0,0,0,0.15);
-}
+    /* Make text white */
+    .navbar-brand,
+    .nav-link {
+        color: var(--bd-background) !important;
+    }
 
+    /* Change text color on hover */
+    .nav-link:hover {
+        color: rgb(236, 153, 62) !important; /* Yellow/Orange Accent */
+    }
 
-.text-violet {
-    color: #963234;
-}
-
-.list {
-    .card {
-        transition: transform 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.01);
-        }
+    /* Active/selected menu item */
+    .nav-link.active {
+        color: rgb(230, 67, 66) !important; /* Red Accent */
     }
 }
 
-.navbar-brand {
-    transition: transform 0.2s ease-in-out;
 
-    &:hover {
-        transform: rotate(-2deg) scale(1.1);
-    }
-}
-
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #963234; 
+    color: var(--bd-accent-red);
 }
 
-body, p {
-    color: #122a43; // Dark blue or any preferred text color
-}
-
-body, p {
-    color: #122a43; // Dark blue or any preferred text color
-}
-
-
+/* Links */
 a {
-    color: red; /* Change this to any color you want */
-  }
-  
-  a:hover {
-    color: red; /* Change color when hovering */
-  }
+    color: var(--bd-accent-blue);
+}
+a:hover {
+    color: var(--bd-accent-orange);
+}
 
-  .latest-posts a {
-    color: #007bff;
-  }
+/* Cards (Post and Featured Sections) */
+.card {
+    background-color: var(--bd-card-bg) !important;  /* Dark grey */
+    color: var(--bd-light) !important; /* White text */
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure card titles are red */
+.card-title a {
+    color: var(--bd-accent-orange) !important;
+    font-weight: bold;
+}
+
+/* Ensure text inside cards is white */
+.card-text, .card-footer {
+    color: var(--bd-light) !important;
+}
+
+/* Sections */
+.section {
+    background-color: var(--bd-background) !important;
+    color: var(--bd-light) !important;
+}
+
+/* Section Headers */
+.section-title, h2.featured-pages {
+    color: var(--bd-accent-red) !important;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.card:hover {
+    background-color: rgb(60, 59, 78) !important; /* Slightly lighter grey on hover */
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* Ensure author and date text are white */
+.card .post-meta, 
+.card .card-footer,
+.card .post-meta a {
+    color: white !important;
+}
+
+/* Ensure the author name and metadata inside the cards are white */
+.card .post-meta,
+.card-footer .post-date {
+    color: white !important;
+    opacity: 1; /* Ensures visibility */
+}
+
+/* Make sure hovered text doesn't change */
+.card .post-meta:hover, 
+.card-footer .post-date:hover {
+    color: white !important;
+}
