@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media Literacy on MisinformED</title>
+    <link>https://sofiasegalla.github.io/hugo-mock-landing-page/tags/media-literacy/</link>
+    <description>Recent content in Media Literacy on MisinformED</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Mon, 10 Feb 2025 21:57:53 -0500</lastBuildDate>
+    <atom:link href="https://sofiasegalla.github.io/hugo-mock-landing-page/tags/media-literacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fact-Check: Viral ‘Banned News Story’ Is Actually a Hoax</title>
+      <link>https://sofiasegalla.github.io/hugo-mock-landing-page/post/hugo-v0-100/</link>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://sofiasegalla.github.io/hugo-mock-landing-page/post/hugo-v0-100/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;banned-news-hoax.png&#34; alt=&#34;Fake News Hoax&#34;&gt;&#xA;{ .img-fluid }&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A post claiming that major news outlets suppressed a groundbreaking story has been widely shared, but fact-checkers confirm it&amp;rsquo;s based on misrepresented sources. Here’s what really happened.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;✅ &lt;strong&gt;Debunk the claim&lt;/strong&gt; and learn how to spot sensationalized misinformation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
