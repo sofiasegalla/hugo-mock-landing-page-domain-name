@@ -73,6 +73,15 @@ body, p {
     color: #122a43; // Dark blue or any preferred text color
 }
 
-h3 a, h4 a {
-    color: #1e4a75;  // Change card title colors
-}
+
+a {
+    color: red; /* Change this to any color you want */
+  }
+  
+  a:hover {
+    color: red; /* Change color when hovering */
+  }
+
+  .latest-posts a {
+    color: #007bff;
+  }

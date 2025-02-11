@@ -45,4 +45,3 @@ To detect vulnerable libraries check [snyk's Vulnerability DB](https://snyk.io/v
 ## Configure Content Security Policy (CSP)
 
 A Content Security Policy (CSP) helps to ensure any content loaded in the page is trusted by the site owner. CSPs mitigate cross-site scripting (XSS) attacks because they can block unsafe scripts injected by attackers. However, the CSP can easily be bypassed if it is not strict enough.
-

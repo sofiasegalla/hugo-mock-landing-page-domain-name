@@ -1,22 +1,18 @@
 ---
-title: "Hugo v0.119.0"
-description: ""
-date: 2023-09-24
+title: "Social Media Bots Amplify Health Misinformation on X (Twitter)"
+description: "Thousands of coordinated bot accounts are pushing misleading health claims about a new vaccine."
+date: 2025-02-08
 draft: false
-images: ["hugo-logo.png"]
-categories: ["Hugo Release Notes"]
-tags: ["Hugo"]
-keywords: ["hugo v0.119"]
-authors: ["Bjørn Erik Pedersen"]
+images: ["bot-health-misinformation.png"]
+categories: ["Misinformation Detection"]
+tags: ["Social Media Bots", "Health Misinformation", "AI Manipulation"]
+keywords: ["misinformation bots", "health misinformation", "Twitter AI"]
+authors: ["Janet Jane"]
 ---
 
-![Hugo](hugo-logo.svg)
-{ .img-fluid .mb-5}
+![Bot Activity](bot-health-misinformation.png)
+{ .img-fluid }
 
-This version is built with Go 1.21.1 which contains some relevant security fixes for the html/template package, see [Issue 62196](https://github.com/golang/go/issues/62196) and [Issue 62197](https://github.com/golang/go/issues/62197). This is the main reason Hugo 0.119.0 is released sooner rather than later. But this release also comes with a dependency refresh and some useful image processing improvements:
+> A recent report reveals that thousands of coordinated bot accounts are pushing misleading health claims about a new vaccine. The misinformation surge raises concerns about AI-driven narratives influencing public health.
 
-A new general-purpose [Process](https://gohugo.io/content-management/image-processing/#process) method and filter.
-A new [Opacity](https://gohugo.io/functions/images/#opacity) filter.
-
-
-[Release Notes on GitHub](https://github.com/gohugoio/hugo/releases).
+🔍 **Explore the patterns** behind automated misinformation campaigns.
